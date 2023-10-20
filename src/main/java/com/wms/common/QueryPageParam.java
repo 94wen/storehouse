@@ -7,15 +7,11 @@ import java.util.HashMap;
  * @Data 2023/9/30 14:51
  */
 public class QueryPageParam {
-    //默认
-    private static int PAGE_SIZE=3;
-    private static int PAGE_NUM=1;
 
+    private int pageSize;
+    private int pageNum;
 
-    private int pageSize=PAGE_SIZE;
-    private int pageNum=PAGE_NUM;
-
-    private HashMap param;
+    private HashMap param = new HashMap();
 
     public HashMap getParam() {
         return param;
